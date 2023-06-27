@@ -1,0 +1,44 @@
+{% extends 'layout.html'%}{%block title %} Project {% endblock %}{%block content%}
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                <form id="contact" action="/project" method="POST">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="section-heading">
+                                <h2>PORT SCANNER</h2>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-9"> -->
+                            <!-- <div class="row"> -->
+                                <div >
+                                    
+                                    
+                                        <label for="fname">Masukkan Domain / IP Address</label>
+                                        <input type="text" id="ip" name="ip" placeholder="{{ ip }}">
+                                        
+                                    
+                                        <label for="lname">Port</label>
+                                        <input type="text" id="port" name="port" placeholder="{{ port }}"><br><br>
+
+                                        <!-- <label for="lname">End Port</label>
+                                        <input type="text" id="port2" name="port2" placeholder="{{ port2 }}"><br><br> -->
+                                        
+                                        <button style="position: relative; top: -40px;" type="submit" id="form-submit" name="submit" class="main-button">Scan</button>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="input_text" type="text" class="form-control" id="message" placeholder=" Hasil Port Scanner disini">
+                                            {{ msg }}
+                                        </textarea>
+                                    </fieldset>
+                                </div>
+                                </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock %}

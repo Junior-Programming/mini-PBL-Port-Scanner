@@ -1,0 +1,32 @@
+{% extends 'layout.html'%}{%block title %} Register {% endblock %}{%block content%}
+<div id="contact" class="contact-us section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="login-wrap p-4 p-md-5">
+              <div class="icon d-flex align-items-center justify-content-center">
+                  <span class="fa fa-user-o"></span>
+              </div>
+              <h3 class="text-center mb-4">create an account!</h3>
+                    <form id="contack" action="/register" method="POST" class="login-form">
+                        <div class="form-group">
+                            <input type="name" name="name" id="name" class="form-control rounded-left" placeholder="Username" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="Email" name="email" id="email" class="form-control rounded-left" placeholder="Email" required>
+                        </div>
+                        <div class="form-group d-flex">
+                            <input type="password" name="password" id="password" class="form-control rounded-left" placeholder="Password" required>
+                        </div>
+            
+            <div class="form-group">
+                <button type="submit"  id="form-submit" class="btn btn-primary rounded submit p-3 px-5">register</button>
+            </div>
+          </form>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

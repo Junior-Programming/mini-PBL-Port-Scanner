@@ -1,0 +1,9 @@
+{% extends 'layout.html'%}{%block title %} Portofolio {% endblock %}{%block content%}
+
+    <div class="container" style="margin-top: 150px; display:flex; justify-content:center">
+        <video autoplay="True" controls="True" width="80%" class="shadow-lg">
+            <source src="{{ url_for('static', filename='assets/video/trailer.mp4') }}">
+        </video>
+    </div>
+
+{%endblock %}
